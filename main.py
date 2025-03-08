@@ -56,3 +56,13 @@ for a1 in range(p-1):
             break
 
 print(myarray)
+
+# Linear search
+
+def linearSearch(val, arr=[]) -> int:
+    for i in range(0,len(arr),1):
+        if(arr[i] == val):
+            return i
+    return -1
+
+print(linearSearch(12, [1,20,30,600,40,12,25]))
